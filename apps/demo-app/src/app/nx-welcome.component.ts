@@ -5,13 +5,6 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'tailwind-ct-demo-nx-welcome',
   template: `
-    <!--
-     * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-     This is a starter component and can be deleted.
-     * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-     Delete this file and get started with your project!
-     * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-     -->
     <style>
       html {
         -webkit-text-size-adjust: 100%;
@@ -427,6 +420,9 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
         }
       }
     </style>
+    <p class="text-xl font-bold text-red-500 uppercase p-8">
+      This is to test the Tailwind styles in the component tests.
+    </p>
     <div class="wrapper">
       <div class="container">
         <!--  WELCOME  -->
