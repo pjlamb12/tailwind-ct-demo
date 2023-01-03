@@ -1,3 +1,4 @@
+import {TestBed} from '@angular/core/testing;
 import { MountConfig } from 'cypress/angular';
 import { NxWelcomeComponent } from './nx-welcome.component';
 
@@ -9,6 +10,7 @@ describe(NxWelcomeComponent.name, () => {
   }
 
   it('renders', () => {
-     cy.mount(NxWelcomeComponent, config);
+     TestBed.overrideComponent(NxWelcomeComponent, {add: { providers: config.providers}});
+cy.mount(NxWelcomeComponent, config);
   })
 })
